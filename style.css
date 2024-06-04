@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: beige; 
+}
+
+.header h1{
+    margin: 5px auto;
+    width: 500px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    font-size: 2.2rem;
+}
+
+.container{
+    margin: 10px auto;
+    border: 2px solid grey;
+    padding: 100px;
+    width: 600px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    background: url("bg3.jpg") no-repeat center center/cover;
+    box-shadow: 0 10px 5px grey;
+    margin-bottom: 50px;
+}
+
+.container h1{
+    text-align: center;
+    margin-top: -50px;
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+}
+
+.count-el{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    font-weight: 800;
+}
+
+.container .button{
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+}
+
+.button .btn{
+    padding: 8px;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: red;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button .save-btn{
+    padding: 8px;
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: blue;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover{
+    box-shadow: -2px -2px 5px #ca6868;
+}
+
+.save-btn:hover{
+    box-shadow: -2px -2px 5px #2c38e6;
+}
+
+@media(max-width:500px){
+    .container{
+        width: 300px;
+        
+    }
+    .button .btn{
+        font-size: 16px;
+    }
+    .button .save-btn{
+        font-size: 16px;
+    }
+    .container h1{
+        font-size: 30px;
+        margin-left: -20px;
+    }
+    .header h1{
+        font-size: 25px;
+    }
+}
